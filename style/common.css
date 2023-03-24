@@ -1,0 +1,56 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  /*
+	
+	font-weight: 700;
+	*/
+  --main-purple: #673399;
+  --sub-purple: #bd8fe8;
+  --highlight: orangered;
+}
+
+button {
+  all: unset;
+  font-family: inherit;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: initial;
+  padding: 0;
+}
+
+h1 {
+  all: unset;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.section {
+  display: flex;
+  padding: 100px 0;
+}
+.wrapper {
+  max-width: 1080px;
+  min-width: 360px;
+  margin: 0 auto;
+}
+
+/* header */
+.section-header {
+  display: flex;
+  margin-bottom: 100px;
+}

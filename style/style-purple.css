@@ -1,0 +1,162 @@
+.section-purple {
+  background: var(--main-purple);
+}
+
+/* header */
+
+.section-purple .title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.section-purple .title span {
+  box-shadow: inset 0 -0.5em var(--highlight);
+}
+
+.description {
+  font-size: 14px;
+  color: var(--sub-purple);
+  display: flex;
+  align-items: center;
+  line-height: 170%;
+}
+
+/* main */
+
+.section-purple .section-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-purple .section-contents article {
+  display: flex;
+}
+
+.card-cover {
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-cover img {
+  position: absolute;
+  width: 100%;
+  vertical-align: top;
+  opacity: 0.5;
+  object-fit: cover;
+}
+
+.card-cover h2 {
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.card-contents {
+  flex-basis: 0;
+  flex-grow: 1;
+  min-width: 0;
+  background: #fff;
+  padding: 24px;
+}
+
+.card-contents h3 {
+  font-size: 18px;
+  color: var(--main-purple);
+  margin-bottom: 32px;
+}
+
+.card-contents ul {
+  font-size: 14px;
+}
+
+.card-contents li {
+  list-style: none;
+  text-indent: -20px;
+  padding-left: 20px;
+}
+.card-contents li + li {
+  margin-top: 6px;
+}
+
+.card-contents li::before {
+  content: ' ';
+  background: var(--sub-purple);
+
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* media */
+
+@media (min-width: 520px) {
+  /* section-purple */
+  .section-purple .description::before {
+    content: ' ';
+    width: 90px;
+    height: 2px;
+    background: var(--sub-purple);
+    margin-right: 20px;
+  }
+  .card:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .section-purple .title {
+    flex-basis: 26%;
+    flex-shrink: 0;
+  }
+  .card-cover {
+    flex-basis: 26%;
+    flex-shrink: 0;
+  }
+
+  .card-cover img {
+    position: absolute;
+
+    height: 100%;
+  }
+  .card-cover h2 {
+    position: relative;
+  }
+}
+
+@media (min-width: 520px) and (max-width: 1080px) {
+  /* section-purple */
+  .section-purple .section-header {
+    flex-direction: column;
+  }
+  .section-purple .title {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 520px) {
+  .section-purple .section-header {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .section-purple .title {
+    margin-bottom: 50px;
+  }
+  .section-purple .section-contents article {
+    flex-direction: column;
+  }
+
+  .card-cover img {
+    position: relative;
+
+    height: auto;
+  }
+  .card-cover h2 {
+    position: absolute;
+  }
+}
