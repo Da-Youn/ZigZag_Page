@@ -130,11 +130,15 @@
 
 @media (min-width: 520px) and (max-width: 1080px) {
   /* section-purple */
+
   .section-purple .section-header {
     flex-direction: column;
   }
   .section-purple .title {
     margin-bottom: 50px;
+  }
+  .section-purple .section-contents {
+    margin: 0 20px;
   }
 }
 
@@ -146,6 +150,9 @@
 
   .section-purple .title {
     margin-bottom: 50px;
+  }
+  .section-purple .section-contents {
+    margin: 0 20px;
   }
   .section-purple .section-contents article {
     flex-direction: column;
