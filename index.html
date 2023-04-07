@@ -1,199 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko-KR">
 
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./style/common.css">
-	<link rel="stylesheet" href="./style/style-pink.css">
-	<link rel="stylesheet" href="./style/style-purple.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="icon" href="./hodu-img/favicon.ico" type="image/x-icon" sizes="16x16">
+    <title>HODU</title>
 </head>
 
 <body>
-	<!-- section-pink -->
-	<section class="section section-pink">
-		<div class="wrapper">
-			<!-- section-header -->
-			<header class="section-header">
-				<h1 class="title">
-					CALENDAR AND
-					<span>EVENT TOOLS.</span>
-				</h1>
-				<button>+ Add to Calendar</button>
-			</header>
-			<!-- // section-header -->
-			<!-- section-contents -->
-			<main class="section-contents">
-				<article class="calender sold-out">
-					<img class="sold-out-img" src="./images/badge.png" alt="soldout">
-					<img class="calender-cover" src="./images/cover01.png" alt="laptop">
-					<div class="calender-contents">
-						<div class="contents-tag"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-						<a href="#" class="more-info">
-							<div class="contents-text">
-								<h2>Digital Workplace Experience</h2>
-								<p>It is a long established fact that a reader will be distracted by the readable
-									content of
-									a
-									page when looking at its
-									layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-									distribution
-									of
-									letters.</p>
-							</div>
-						</a>
-						<div class="contents-more">
-							<p>SOLDOUT</p>
-						</div>
-					</div>
-				</article>
-				<article class="calender">
-					<img class="calender-cover" src="./images/cover02.png" alt="">
-					<div class="calender-contents">
-						<div class="contents-tag"><span>AR</span><span>VR</span><span>Headsets</span></div>
-						<a href="#" class="more-info">
-							<div class="contents-text">
-								<h2>Augmented World Expo 2022</h2>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-							</div>
-						</a>
-						<div class="contents-more">
-							<a href="#" class="more-people">
-								<p>+ More People</p>
-							</a>
-							<div class="people">
-								<a href="#" class="people-info">
-									<img src="./images/people01.png" alt="">
-								</a>
-								<a href="#" class="people-info">
-									<img src="./images/people02.png" alt="">
-								</a>
-								<a href="#" class="people-info">
-									<img src="./images/people03.png" alt="">
-								</a>
+    <!-- header -->
+    <header id="top">
+        <h1 class="top-logo">
+            <a href="##"><img class="top-hodu-logo" src="./hodu-img/Logo-fin.png" alt="hodu-logo"></a>
+        </h1>
+        <nav class="top-nav">
+            <ul class="top-nav-list">
+                <button id="close" onclick="menu_closed()" class="close-btn" type="button"><img
+                        src="./hodu-img/arrow-right.png" alt=""></button>
+                <li><a href="##">Home</a></li>
+                <li><a href="##">About</a></li>
+                <li><a href="##">Support</a></li>
+                <li><a class="download-btn" href="##">Download</a></li>
+            </ul>
+            <button onclick="menu_opened()" class="open-btn" type="button"><img src="./hodu-img/menu.png"
+                    alt="menu-img"></button>
+        </nav>
 
-							</div>
-						</div>
-					</div>
-				</article>
-				<article class="calender">
-					<img class="calender-cover" src="./images/cover03.png" alt="">
-					<div class="calender-contents">
-						<div class="contents-tag"><span>Photoshop</span><span>Illustrator</span></div>
-						<a href="#" class="more-info">
-							<div class="contents-text">
-								<h2>Adobe Summit</h2>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-									Ipsum
-									has
-									been the industry's standard
-									dummy text ever since the 1500s, when an unknown printer took a galley.</p>
-							</div>
-						</a>
-						<div class="contents-more">
-							<a href="#" class="more-people">
-								<p>+ More People</p>
-							</a>
-							<div class="people">
-								<a href="#" class="people-info">
-									<img src="./images/people04.png" alt="">
-								</a>
-								<a href="#" class="people-info">
-									<img src="./images/people05.png" alt="">
-								</a>
-								<a href="#" class="people-info">
-									<img src="./images/people06.png" alt="">
-								</a>
-							</div>
-						</div>
-					</div>
+        </article>
+    </header>
+    <!-- / header -->
 
-				</article>
-			</main>
-			<!-- // section-contents -->
-		</div>
-	</section>
-	<!-- //section-pink -->
+    <!-- main -->
+    <main id="middle">
+        <!-- middle-container1 -->
+        <section class="middle-container1">
+            <div class="wrapper">
+                <div class="container1-contents">
+                    <h2 class="container1_title">Lorem Ipsum is simply
+                        dummy text of the printing and</h2>
+                    <p class="container1-text">Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown</p>
+                    <a class="download-btn" href="##">Download</a>
+                </div>
+                <img class="container1-img" src="./hodu-img/고양이 1.png" alt="고양이">
+            </div>
 
-	<!-- section-purple -->
-	<section class="section section-purple">
-		<div class="wrapper">
-			<!-- section-header -->
-			<header class="section-header">
-				<h1 class="title">
-					START YOUR
-					<span>PORTFOLIO PROJECT</span>
-				</h1>
-				<p class="description">Lorem Ipsum is simply dummy text of the printing and<br>
-					typesetting industry. Lorem Ipsum has been the
-					industry's<br>
-					standard dummy text ever since the 1500s, when an unknown<br>
-					printer took a galley of type and scrambled
-				</p>
-			</header>
-			<!-- // section-header -->
-			<!-- section-contents -->
-			<main class="section-contents">
-				<!-- article-card1 -->
-				<article class="card">
-					<div class="card-cover"><img src="./images/photo01.png" alt="">
-						<h2>Rest</h2>
-					</div>
-					<div class="card-contents">
-						<h3>Take a rest</h3>
-						<ul>
-							<li>It has survived not only five centuries.</li>
-							<li>Why do we use it?</li>
-							<li>Contrary to popular belief, Lorem Ipsum is not simply random text. It has root.</li>
-						</ul>
-					</div>
-				</article>
-				<!-- // article-card1 -->
-				<!-- article-card2 -->
-				<article class="card">
-					<div class="card-cover"><img src="./images/photo02.png" alt="">
-						<h2>Craft</h2>
-					</div>
-					<div class="card-contents">
-						<h3>Build something</h3>
-						<ul>
-							<li>There are many variations of passages of Lorem Ipsum available.</li>
-							<li>If you are going to use a passage of Lorem Ipsum.</li>
-							<li>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
-								interested.</li>
-						</ul>
-					</div>
-				</article>
-				<!-- // article-card2 -->
-				<!-- article-card3 -->
-				<article class="card">
-					<div class="card-cover"><img src="./images/photo03.png" alt="">
-						<h2>Scrap</h2>
-					</div>
+        </section>
+        <!-- / middle-container1 -->
+        <!-- middle-container2 -->
+        <section class="middle-container2">
+            <div class="wrapper">
+                <section class="container2-top">
+                    <img class="container2-top-img" src="./hodu-img/img_4.png" alt="고양이">
+                    <div class="container2-top-contents">
+                        <h2 class="container2-top-title">Lorem Ipsum is simply
+                            dummy text of the printing and dummy text</h2>
+                        <p class="container2-top-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                        </p>
+                    </div>
+                </section>
+                <section class="container2-bottom">
+                    <div class="container2-bottom-header">
+                        <h2 class="container2-bottom-title">
+                            dummy text of the printing and dummy
+                        </h2>
+                        <p class="container2-bottom-text">Lorem Ipsum is simply <strong>dummy text</strong> of the
+                            printing
+                            and
+                            typesetting
+                            industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown
+                    </div>
+                    <div class="container2-bottom-card">
+                        <img class="container2-bottom-card-img" src="./hodu-img/img_1.png" alt="고양이">
+                        <img class="container2-bottom-card-img" src="./hodu-img/img_2.png" alt="고양이">
+                        <img class="container2-bottom-card-img" src="./hodu-img/img_3.png" alt="고양이">
+                    </div>
+                    <div class="container2-bottom-contents">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown Ipsum is
+                            simply dummy text of the printing and typesetting industry.</p>
+                        <a class="learn-btn" href="##">Learn More</a>
+                    </div>
+                </section>
+            </div>
 
-					<div class="card-contents">
-						<h3>Reference</h3>
-						<ul>
-							<li>Once is therefore always free form repetition, injected humor, or non-characterisic
-								words
-								etc.</li>
-							<li>Predefined chunks as necessary, making this the first true generator on the internet.
-							</li>
-							<li>Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form.
-							</li>
-						</ul>
-					</div>
-				</article>
-				<!-- // article-card3 -->
-			</main>
-			<!-- // section-contents -->
+        </section>
+        <!-- / middle-container2 -->
+        <!-- middle-container3 -->
+        <section class="middle-container3">
+            <div class="wrapper">
+                <div class="container3-subscribe">
+                    <div class="container3-subscribe-contents">
+                        <h2 class="subscribe-title">Subscribe to our Blog post</h2>
+                        <p class="subscribe-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.
+                            Lorem Ipsum has been the industry's standard dummy text </p>
+                    </div>
+                    <form class="container3-subscribe-form">
+                        <input id="user-mail" type="email" placeholder="Enter your e-mail address">
+                        <label for="user-mail"></label>
+                        <button onclick="modal_opened()" class="subscribe-btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="modal">
+                    <div class="modal-body"><img src="./hodu-img/cat 1.png" alt="고양이 얼굴">
+                        <h2 class="modal-title">Thank you!</h2>
+                        <p class="modal-text">Lorem Ipsum is simply dummy
+                            text of the printing industry.</p>
+                        <button onclick="modal_closed()" class="modal-btn" type="button">OK! I Love HODU</button>
+                    </div>
 
+                </div>
+                <a class="scroll-top-btn" href="#top"></a>
+            </div>
+        </section>
+        <!-- / middle-container3 -->
+    </main>
+    <!-- / main -->
 
+    <!-- bottom -->
+    <footer id="bottom">
+        <div class="wrapper">
+            <a href="##">
+                <img class="bottom-hodu-logo" src="./hodu-img/Logo-fin.png" alt="">
+            </a>
+            <nav class="bottom-go-list">
+                <ul>
+                    <li><a href="##"><img src="./hodu-img/icon-blog.png" alt="blog"></a></li>
+                    <li><a href="##"><img src="./hodu-img/icon-insta.png" alt="insta"></a></li>
+                    <li><a href="##"><img src="./hodu-img/icon-facebook.png " alt="facebook"></a></li>
+                    <li><a href="##"><img src="./hodu-img/icon-youtube.png" alt="youtube"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <ul class="bottom-menu">
+            <li><a href="##">About</a></li>
+            <li><a href="##">Blog</a></li>
+            <li><a href="##">Support</a></li>
+            <li><a href="##">Terms of Use</a></li>
+        </ul>
+    </footer>
+    <!-- / bottom -->
 
-		</div>
-	</section>
-	<!-- //section-purple -->
+    <script>
+        function menu_closed() {
+            document.querySelector('.top-nav-list').style.display = 'none';
+        }
+        function menu_opened() {
+            document.querySelector('.top-nav-list').style.display = 'flex';
+        }
+        function modal_closed() {
+            document.querySelector('.modal').style.display = 'none';
+        } function modal_opened() {
+            document.querySelector('.modal').style.display = 'flex';
+        }
+    </script>
 </body>
 
 </html>

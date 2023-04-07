@@ -1,0 +1,194 @@
+/* 미디어 쿼리 */
+
+@media (min-width: 1280px) {
+  .middle-container1 {
+    padding-top: 132px;
+  }
+  .close-btn {
+    display: none;
+  }
+  .open-btn {
+    display: none;
+  }
+  .top-nav-list {
+    display: flex;
+  }
+}
+@media (max-width: 1279px) {
+  .top-nav-list {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    padding: 120px 0 0 50px;
+    background-color: #263140;
+    margin: 0;
+    display: none;
+    z-index: 1;
+  }
+  .top-nav-list {
+    color: white;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .top-nav-list .close-btn {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    cursor: pointer;
+  }
+  .open-btn {
+    cursor: pointer;
+  }
+
+  .top-nav-list .download-btn {
+    margin: 20px 0 0 0;
+  }
+
+  .middle-container1 .wrapper,
+  .middle-container2 .container2-top,
+  .container2-top-contents,
+  .container2-bottom-contents {
+    flex-direction: column;
+    align-items: center;
+  }
+  .middle-container2 .container2-top {
+    gap: 40px;
+    padding: 32px 0 60px;
+  }
+  .container2-bottom-card {
+    padding: 40px 0 60px;
+    overflow-x: scroll;
+    margin-bottom: 30px;
+  }
+  .container2-bottom-card::-webkit-scrollbar {
+    background: none;
+  }
+  .container2-bottom-card::-webkit-scrollbar-thumb {
+    height: 5px;
+    background-color: #263140;
+    border-radius: 10px;
+  }
+  .container3-subscribe {
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .container3-subscribe-form {
+    margin-top: 22px;
+  }
+  .container3-subscribe-contents {
+    flex: 1;
+  }
+  .container3-subscrisbe-form {
+    padding: 5px 5px 5px 10px;
+  }
+}
+@media (min-width: 738px) and (max-width: 1279px) {
+  .container1-img {
+    width: 297px;
+  }
+
+  /* container2 */
+}
+
+@media (max-width: 737px) {
+  .bottom-hodu-logo {
+    width: 90px;
+  }
+  .middle-container1 {
+    padding-top: 116px;
+  }
+
+  .middle-container1 .wrapper {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container1_title {
+    font-size: 24px;
+  }
+  .container1-text {
+    font-size: 14px;
+  }
+  .container1-img {
+    width: 197px;
+  }
+  .container1-contents {
+    align-items: center;
+  }
+  .download-btn {
+    width: 119px;
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+  /* container2 */
+  .container2-top-img {
+    width: 326px;
+  }
+  .container2-bottom-contents {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .container2-bottom-contents p {
+    align-self: center;
+  }
+  .middle-container3 .wrapper {
+    margin-top: 300px;
+  }
+
+  .container3-subscribe {
+    top: -250px;
+  }
+
+  .top-hodu-logo {
+    width: 116px;
+  }
+
+  .modal-body {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+  }
+
+  .modal-body img {
+    width: 60px;
+  }
+
+  .modal-title {
+    font-size: 24px;
+  }
+
+  .modal-btn {
+    font-size: 14px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 24px;
+  }
+  footer .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    gap: 0;
+  }
+  footer .wrapper ul {
+    padding: 0;
+  }
+  footer .bottom-menu {
+    display: block;
+    color: #767676;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+  }
+}
